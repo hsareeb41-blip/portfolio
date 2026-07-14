@@ -801,22 +801,9 @@ export default function Portfolio() {
             ))}
           </div>
         ) : (
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              "React",
-              "Next.js",
-              "Node.js",
-              "MongoDB",
-              "Tailwind CSS",
-              "TypeScript",
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="bg-slate-100 border border-slate-200 text-slate-900 px-5 py-2.5 rounded-full text-sm font-medium"
-              >
-                {skill}
-              </span>
-            ))}
+          <div className="rounded-[2rem] border border-slate-200 bg-white/70 p-8 text-center text-slate-500">
+            No skills are available yet. Please add skills in the backend to
+            display them here.
           </div>
         )}
       </motion.section>
